@@ -1,0 +1,20 @@
+﻿/*
+//只支持一个函数调用写法
+function fun2(res)
+{
+	console.log("我是fun2");
+	res.write("你好我是fun2");
+}
+ module.exports=fun2;//只支持一个函数调用
+*/
+//只支持多个函数调用写法
+module.exports={
+	fun2:function(res){
+		console.log("我是fun2");
+		res.write("你好我是，fun2");
+	},
+	fun3:function(res){
+		console.log("我是fun3");
+		res.write("你好我是，fun3");
+	}
+}

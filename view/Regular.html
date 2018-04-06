@@ -1,0 +1,25 @@
+﻿<html>
+	<head>
+	<title>No.JS正则表达式学习</title>
+	</head>
+	<script>
+		var str='fiwqoefjsdkHel{name}lowew{name}f22r2{name}r224wr';
+		var re=/\{.*?\}/g;
+		window.onload=function(){
+			if(re.test(str)){
+				alert("含有");
+				newStr=str.replace(re,'张三');
+				alert(newStr);
+			}else
+			{
+				alert('没有');
+			}
+			
+
+		}
+	</script>
+	<body>
+		<h1>正则表达式页面</h1>
+
+	</body>
+</html>
